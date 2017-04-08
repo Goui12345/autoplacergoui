@@ -11,10 +11,10 @@ class AutoPlacer {
 		/* Literals */
 		this.RECAPTCHA_TITLE = "recaptcha challenge";
 		this.REDDIT = "reddit.com";
-		this.PIXLS = "pxls.space";
+		this.PIXLS = "pl.pxls.cf";
 
 		/* Init the needed members */
-		this.WAIT_TIME = 3;
+		this.WAIT_TIME = 1;
 		this.checkCaptchaRecovered = false;
 		this.system = window.location.hostname;
 		this.isReddit = this.system.includes(this.REDDIT);
@@ -342,7 +342,7 @@ class AutoPlacer {
 						break;
 				}
 				self.main();
-			}, waitSeconds * 1000);
-		}, self.WAIT_TIME * 1000);
+			}, waitSeconds * 1);
+		}, self.WAIT_TIME * 1);
 	}
 }
